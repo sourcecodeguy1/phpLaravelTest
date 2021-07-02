@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Instruction</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="Documentation/img/favicon.png">
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" href="Documentation/css/font-awesome.min.css">
+	<!-- Normalize/Reset CSS-->
+	<link rel="stylesheet" href="Documentation/css/normalize.min.css">
+	<!-- Main CSS-->
+	<link rel="stylesheet" href="Documentation/css/main.css">
+	<style type="text/css">
+
+		.image_cs_w {
+    text-align: center;
+			}
+
+			img.image_cs {
+			    width: 90%;
+			}
+			</style>
+
+</head>
+
+<body id="welcome">
+
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				Welcome
+			</a>
+		</div>
+		<nav class="left-nav">
+			<ul id="nav">
+				<li class="current">
+					<a href="#welcome">Welcome</a>
+				</li>
+				<li>
+					<a href="#installation">Installation</a>
+				</li>
+				<li>
+					<a href="#Database_upload">Database upload</a>
+				</li>
+				<li>
+					<a href="#env_file">Fix .env File and set our database</a>
+				</li>
+			</ul>
+		</nav>
+	</aside>
+
+	<div id="main-wrapper">
+		<div class="main-content">
+			<section id="welcome">
+				<div class="content-header">
+					<h1>Welcome</h1>
+				</div>
+				<div class="welcome">
+
+					<h2 class="twenty">Welcome To The instruction</h2>
+
+					<p>This document covers the installation and use of this project.
+						<br />
+
+				</div>
+
+				<div class="features">
+					<h2 class="twenty">Template Features</h2>
+
+					<ul>
+						<li>Clean &amp; Simple Design</li>
+						<li>HTML5 &amp; CSS3</li>
+						<li>Bootstrap 4.0</li>
+						<li>Html Pages</li>
+						<li>Fully Responsive Design</li>
+						<li>Laravel, PHP and Ajax Powered</li>
+						<li>Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome</li>
+						<li>Extensive Documentation</li>
+					</ul>
+				</div>
+
+			</section>
+
+			<section id="installation">
+				<div class="content-header">
+					<h1>Php Test Installing</h1>
+				</div>
+				<h2 class="title">Installing Project.</h2>
+
+				<div class="section-content">
+					<ol>
+						<li>
+							After unzip the download zip file you will get <code>/phpLaravelTest</code> file, These are the files that you need.</li>
+						<li>
+							You have to upload this on your server or direct unzip this on your server. If you are using Xammp or other local server you have to unzip it on <code>/htdocs</code> folder for Xampp or on other folder for that speccific server
+						</li>
+						<li>
+							Now go to your database and create a new database and name it <code>phplaraveltest</code> or as you want. There is a file on <code>/phpLaravelTest/phplaraveltest.sql</code>, this is the database file. You have to import this to your database <a href="#Database_upload">more about database upload...</a>
+						</li>
+						<li>
+							After Importing into database you have to go to <code>/phpLaravelTest/.env</code> file. You have to give the proper database name, username and password <a href="#env_file">more about env file...</a>
+						</li>
+					</ol>
+				</div>
+
+			</section>
+
+
+			<section id="Database_upload">
+				<div class="content-header">
+					<h1>Upload on database</h1>
+				</div>
+				<div class="script-source">
+
+					<div class="section-content">
+						<ol>
+							<li>
+								Go to your database or if you are in xampp or other local server go to <code>/phpmyadmin</code>
+								<div class="image_cs_w">
+									<img src="Documentation/img/database.png" class="image_cs">
+								</div>
+							</li>
+							<li>
+								Go to that database that you have created. Here we created a database name <code>/phplaraveltest</code>
+								<div class="image_cs_w">
+									<img src="Documentation/img/database1.png" class="image_cs">
+								</div>
+							</li>
+							<li>
+								Now, go to Import and choose  <code>/phpLaravelTest/phplaraveltest.sql</code> this file. And click on go.
+								<div class="image_cs_w">
+									<img src="Documentation/img/database2.png" class="image_cs">
+								</div>
+							</li>
+							<li>
+								Now, have the database ready
+								<div class="image_cs_w">
+									<img src="Documentation/img/database3.png" class="image_cs">
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section id="env_file">
+				<div class="content-header">
+					<h1>Fix <code>.env</code> file</h1>
+				</div>
+				<div class="script-source">
+
+					<div class="section-content">
+						<ol>
+							<li>
+								To fix env file first go to <code>/phpLaravelTest/.env</code>. And open it on sublime text or any other html editor. You can also do it on Notepad.
+								<div class="image_cs_w">
+									<img src="Documentation/img/env.png" class="image_cs">
+								</div>
+							</li>
+							<li>
+								Now set the database name, username and password. For demo our database name is phpLaravelTest, our username is root and Password is 123123.
+								These are demo please input the proper <b>name, username and password</b>
+								<div class="image_cs_w">
+									<img src="Documentation/img/env1.png" class="image_cs">
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+	</div>
+
+
+	<!-- Essential JavaScript Libraries
+		==============================================-->
+	<script type="text/javascript" src="Documentation/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="Documentation/js/jquery.nav.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all()
+	</script>
+	<script type="text/javascript" src="Documentation/js/custom.js"></script>
+
+</body>
+
+</html>
